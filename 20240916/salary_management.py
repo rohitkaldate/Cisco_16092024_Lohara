@@ -64,10 +64,10 @@ your choice:'''))
         print(max)
     return choice
 
-def menus():
+def menus1():
     choice = menu()
     while choice != 7:
         choice = menu()
     print('App Ended')
 
-menus()
+menus1()
