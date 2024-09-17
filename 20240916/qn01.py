@@ -8,13 +8,13 @@ print("List of words:",words_list)
 
 #convert list into tuple: 
 
-my_tuple= tuple(words_list)
+words_tuple= tuple(words_list)
 
-print(my_tuple)
+print(words_tuple)
 
 with open('qn01_data.txt','w') as data_file:
     data_file.write(f'List:{words_list}')
-    data_file.write(f'Tuple:{my_tuple}')
+    data_file.write(f'Tuple:{words_tuple}')
 print("Data written to file")
 
 with open('qn01_data.txt','r') as data_file:
