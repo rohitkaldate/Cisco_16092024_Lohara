@@ -1,7 +1,4 @@
-import power
-
-print(power.square(5))
-print(power.cube(5))
-
-from power import square
-print(square(6))
+def square(N:int)->int:
+    return N * N
+def cube(N:int)->int:
+    return N * N * N
