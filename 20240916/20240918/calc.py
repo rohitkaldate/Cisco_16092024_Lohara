@@ -1,4 +1,4 @@
-def find_diff(first=1, second=0):
+def find_diff(first:int=1, second:int=0)->int:
     return first - second
 
 print(find_diff(20,10)) #10
