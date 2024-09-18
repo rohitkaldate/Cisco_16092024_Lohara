@@ -10,17 +10,26 @@ class Account:
     def deposit(self,amount):
         self.__balance += amount
     def withdraw(self,amount):
+        if amount > self.__balance:
+            print("not enough balance")
+            return
         self.__balance -= amount
         
 raj_ac= Account(name= 'Raj',number= '3739111945',initial_amount= 3000)
-print(raj_ac)
+print(raj_ac)#balance=3000
+
 raj_ac.deposit(200000)
 print(raj_ac)
+
 raj_ac.deposit(10000)
 print(raj_ac)
 
 raj_ac.withdraw(50000)
 print(raj_ac)
 print(raj_ac.__dict__)
-print(raj_ac.__balance)
+
+#print(raj_ac.__balance) #err
+
+raj_ac.withdraw(200000)
+print(raj_ac)
 
